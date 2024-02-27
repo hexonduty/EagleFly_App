@@ -12,7 +12,7 @@ Gibi özelliklere sahipsiniz.
 ## EagleFly Uygulaması Geliştirmeye Devam Edilecek mi?
 ### Evet uygulamayı geliştirmeye ve daha güzel bir hale getirmeye devam edeceğim.
 
-# ------------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------ #
 
 ## What is the EagleFly Project?
 In this project, I have just started to learn and I am committed to improving myself.
