@@ -5,7 +5,7 @@ Bu proje içerisinde yeni öğrenmeye başladığım ve kendimi geliştirmeye ad
 C# Form Uygulamasından bir parça görebilirsiniz.
 
 ## Uygulama İçerisinde..
-1. Kayıt Olma
+1. Kullanıcı Kayıt Etme
 2. Kayıt olan kullanıcıları görme.
 Gibi özelliklere sahipsiniz.
 
