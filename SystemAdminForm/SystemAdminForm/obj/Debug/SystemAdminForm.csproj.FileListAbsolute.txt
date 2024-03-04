@@ -8,3 +8,6 @@ C:\Users\efecan\source\repos\SystemAdminForm\SystemAdminForm\obj\Debug\SystemAdm
 C:\Users\efecan\source\repos\SystemAdminForm\SystemAdminForm\obj\Debug\SystemAdminForm.csproj.CoreCompileInputs.cache
 C:\Users\efecan\source\repos\SystemAdminForm\SystemAdminForm\obj\Debug\SystemAdminForm.exe
 C:\Users\efecan\source\repos\SystemAdminForm\SystemAdminForm\obj\Debug\SystemAdminForm.pdb
+C:\Users\efecan\source\repos\SystemAdminForm\SystemAdminForm\obj\Debug\SystemAdminForm.Resource1.resources
+C:\Users\efecan\source\repos\SystemAdminForm\SystemAdminForm\obj\Debug\SystemAdminForm.Login.resources
+C:\Users\efecan\source\repos\SystemAdminForm\SystemAdminForm\obj\Debug\SystemAdminForm.MainPage.resources

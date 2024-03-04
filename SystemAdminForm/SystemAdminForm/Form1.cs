@@ -12,38 +12,56 @@ namespace SystemAdminForm
 {
     public partial class Form1 : Form
     {
+
+        public static string[] usernames = new string[120];
+        public static string[] passwords = new string[120];
+        public static int userIndex = 0;
+
         public Form1()
         {
             InitializeComponent();
         }
 
+
         private void Form1_Load(object sender, EventArgs e)
         {
             MessageBox.Show(" Welcome to the Eagle Fly System.\r\n Please click the OK button to load the system.", "İnformation", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            usersListBox.Items.Add("einTheDeveloper" + " : " + "unknown");
+          
         }
 
 
-
-        private void loginButton_Click(object sender, EventArgs e)
+        private void RegisterButton_Click(object sender, EventArgs e)
         {
+            string username = userName.Text;
+            string password = userPassword.Text;
 
-            int userPasswordInput = Convert.ToInt32(userPassword.Text);
-            int userRepeatPasswordInput = Convert.ToInt32(userRepeatPassword.Text);
+            dataGridView1.Rows.Add(username, password, DateTime.Now);
 
-            if (userName.Text.Length <= 10 && userPasswordInput == userRepeatPasswordInput)
-            {
-                MessageBox.Show("Your Username and Password have been save successfully");
+            usernames[userIndex] = username;
+            passwords[userIndex] = password;
+            userIndex++;
 
-                string userData = userName.Text + " : " + userPasswordInput;
-                usersListBox.Items.Add(userData);
-            }
-            else
-            {
-                MessageBox.Show("Your Username must be equal to ten Characters and Your Password must be consistent of only Numbers");
-            }
+            MessageBox.Show($"Kullanici sisteme basariyla eklendi [Kullanici No: {userIndex.ToString()}]", "Basarili", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            notifyIcon1.BalloonTipTitle = "New User";
+            notifyIcon1.BalloonTipText = "The new user has been successfully registered to the system";
+            notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
+            notifyIcon1.ShowBalloonTip(60000);
+
+
         }
 
-       
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MainPage mainPage = new MainPage();
+
+            mainPage.Show();
+
+            this.Hide();
+        }
+
+      
     }
 }
